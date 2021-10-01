@@ -17,6 +17,7 @@ import com.example.assigment2.model.Email;
 import java.util.ArrayList;
 import java.util.List;
 
+// Main activity
 public class MainActivity extends AppCompatActivity {
 
     Toolbar mToolbar;
