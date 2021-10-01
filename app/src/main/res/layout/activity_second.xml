@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:ems="12"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/icon_Favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_favorite_24" />
+
+    <View
+        android:id="@+id/line_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_Title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#D3D3D3" />
+
+    <TextView
+        android:id="@+id/IconTv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_file"
+        android:gravity="center"
+        android:text="L"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/SenderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/IconTv"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/IconTv"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SenderTv"
+        android:layout_below="@+id/SenderTv"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/DetailEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IconTv"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+</RelativeLayout>
